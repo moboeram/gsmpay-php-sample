@@ -58,7 +58,8 @@ $response = json_decode($response, true);
         <?php if ($error) : ?>
             <p>CURL Error: <?= $error ?></p>
         <?php else : ?>
-            <p>وضعیت: <?= $httpCode === 200 && $response['is_paid'] === true ? 'تراکنش موفق' : 'تراکنش ناموفق' ?></p>
+            <p>وضعیت: <?= $httpCode === 200 && $response['data']['is_paid'] === true ? 'تراکنش موفق' : 'تراکنش ناموفق'
+                ?></p>
             <p>کد وضعیت: <?= $httpCode ?></p>
             <p>پیام: <?= $httpCode !== 200 ? $response['message'] : '' ?></p>
         <?php endif; ?>
