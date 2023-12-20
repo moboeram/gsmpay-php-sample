@@ -62,7 +62,7 @@ if ($error) {
     echo 'CURL Error:' . $error;
 } else {
     if ($httpCode === 201) {
-        header('Location: ' . $response['redirect_url']);
+        header('Location: ' . $response['data']['redirect_url']);
     } else {
         echo 'Status Code: ' . $httpCode . '<br>';
         echo 'Error Type: ' . $response['type'] . '<br>';
