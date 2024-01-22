@@ -48,7 +48,7 @@ $options = [
     ],
 ];
 
-$curl = curl_init('https://gsmpay.ir/payments/request');
+$curl = curl_init('https://cpg.gsmpay.ir/payments/request');
 curl_setopt_array($curl, $options);
 
 $response = curl_exec($curl);

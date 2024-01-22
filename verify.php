@@ -23,7 +23,7 @@ $options = [
     ],
 ];
 
-$curl = curl_init('https://gsmpay.ir/payments/verify');
+$curl = curl_init('https://cpg.gsmpay.ir/payments/verify');
 curl_setopt_array($curl, $options);
 
 $response = curl_exec($curl);
