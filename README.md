@@ -1,1 +1,0 @@
-# GSMPay - PHP sample code
